@@ -29,16 +29,26 @@
         android:text="@string/clocktext1"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button"
+    <ImageButton
+        android:id="@+id/btn_stopwatch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/open_time_picker" />
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="125dp"
+
+        android:layout_marginBottom="47dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/custom_button"
+        android:onClick="stopwatchfunction"
+        android:scaleType="centerInside"
+        android:src="@drawable/stopwatch" />
 
     <TextView
         android:id="@+id/textView2"

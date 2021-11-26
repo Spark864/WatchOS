@@ -1,7 +1,9 @@
 package com.example.watchos;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextClock;
 import android.widget.TextView;
 
@@ -25,6 +27,12 @@ public class MainActivity extends Activity {
         //get time
         //set alarm for time
         //or set phone time to time
+    }
+
+    // Goto the stopwatch function
+    public void stopwatchfunction(View view){
+        Intent intent = new Intent(MainActivity.this, StopWatch.class);
+        startActivity(intent);
     }
 
 }
