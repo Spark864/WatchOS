@@ -23,6 +23,7 @@ public class StopWatch extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stop_watch);
 
+        //Get and set background color
         Intent intent = getIntent();
         String selectColor = intent.getStringExtra("SelectColor");
         final ConstraintLayout constraintLayout;

@@ -21,9 +21,11 @@ public class ChangeBackground extends Activity {
         button1 = findViewById(R.id.btn_blue);
         button2 = findViewById(R.id.btn_yellow);
         constraintLayout = findViewById(R.id.rlVar1);
-        Intent intent = getIntent();
-        String selectColor = intent.getStringExtra("SelectColor");
 
+        Intent intent = getIntent();
+
+        //Get and set background color
+        String selectColor = intent.getStringExtra("SelectColor");
         colorSelect = selectColor;
         if (selectColor.equals("blue")){
             constraintLayout.setBackgroundResource(R.color.blue);

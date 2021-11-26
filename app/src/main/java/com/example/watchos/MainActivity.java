@@ -24,8 +24,8 @@ public class MainActivity extends Activity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        //TextClock textClock = new TextClock(MainActivity.this);
 
+        //Get and set background color
         Intent intent = getIntent();
         String selectColor = intent.getStringExtra("SelectColor");
         final RelativeLayout relativeLayout;
@@ -53,6 +53,7 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    //Goto the background function
     public void backgroundfunction(View view){
         Intent intent = new Intent(MainActivity.this, ChangeBackground.class);
         intent.putExtra("SelectColor", colorSelect);
