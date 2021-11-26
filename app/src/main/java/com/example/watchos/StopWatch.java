@@ -5,7 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import java.util.Locale;
 
@@ -14,11 +17,24 @@ public class StopWatch extends Activity {
     private int seconds = 0;
     private boolean running;
     private boolean wasRunning;
-
+    String colorSelect;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stop_watch);
+
+        Intent intent = getIntent();
+        String selectColor = intent.getStringExtra("SelectColor");
+        final ConstraintLayout constraintLayout;
+        constraintLayout = findViewById(R.id.rlVar1);
+        colorSelect = selectColor;
+
+        if (selectColor.equals("blue")){
+            constraintLayout.setBackgroundResource(R.color.blue);
+        }
+        else if (selectColor.equals("yellow")) {
+            constraintLayout.setBackgroundResource(R.color.yellow);
+        }
         if (savedInstanceState != null) {
 
             // Get the previous state of the stopwatch
@@ -120,6 +136,7 @@ public class StopWatch extends Activity {
     // Back to main activity.
     public void backfunction(View view){
         Intent intent = new Intent(StopWatch.this, MainActivity.class);
+        intent.putExtra("SelectColor", colorSelect);
         startActivity(intent);
     }
 

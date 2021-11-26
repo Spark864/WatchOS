@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GitR/WatchOS/app/src/main/res/drawable/custom_button.xml" value="1.8527777777777779" />
-        <entry key="..\:/GitR/WatchOS/app/src/main/res/layout/activity_main.xml" value="0.8333333333333334" />
+        <entry key="..\:/GitR/WatchOS/app/src/main/res/layout/activity_main.xml" value="2.0" />
+        <entry key="..\:/GitR/WatchOS/app/src/main/res/layout/background_function.xml" value="0.7037037037037037" />
         <entry key="..\:/GitR/WatchOS/app/src/main/res/layout/stop_watch.xml" value="0.8333333333333334" />
         <entry key="..\:/Users/ernes/AndroidStudioProjects/WatchOS/app/src/main/res/layout/activity_main.xml" value="0.8733766233766234" />
       </map>
